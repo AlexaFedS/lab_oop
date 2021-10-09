@@ -7,10 +7,10 @@ class circle(geometry_figure):
 
     FIGURE_TYPE = "Круг"
 
-    def __init__(self, radius, _color):
+    def __init__(self, radius, color):
         self.rad = radius
         self.color = color_geometry()
-        self.color.change_color = _color
+        self.color.change_color(color)
 
     def get_type(self):
         return self.FIGURE_TYPE
